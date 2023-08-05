@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="main-container" class="main-container">
+            <div id="left">
+                <div id="po-box">
+                    <h3 id="heading">Post Office Application</h3>
+                    <p id="po-content">This Application allows you to extract information about the nearest Post Offices, based on your
+                        location.</p>
+                </div>
+                <div id="main-img">
+                    <img src="main-img.png" alt="">
+                </div>
+            </div>
+            <div id="right">
+                <div id="button-content">
+                    <h3 id="ip-current">Your Current IP Address is <span id="co-ordinates">127.0.01</span></h3>
+                    <button id="search-ip" type="button">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="container-2">
+        <div id="ip-map-container">
+            <div class="upper-box-box">
+                <div id="ip-adress">IP Address : <span id="co-ordinates-display">127.0.01</span></div>
+                <div id="ip-info">
+                    <div class="lat-long-info">
+                        <div>Lat: <span class="add"></span></div>
+                        <div>Long: <span class="add"></span></div>
+                    </div>
+                    <div class="lat-long-info">
+                        <div>City: <span class="add"></span></div>
+                        <div>Region: <span class="add"></span></div>
+                    </div>
+                    <div class="lat-long-info">
+                        <div>Organisation: <span class="add"></span></div>
+                        <div>Hostname: <span class="add"></span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lower">
+                <div class="map-container">
+                    <h3 id="loaction">Your Current Location</h3>
+                    <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" frameborder="0"
+                        style="border:0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="more-info">
+            <div id="more">
+                <h3>More Information About You</h3>
+            </div>
+            <div id="content">
+                <div>
+                    <p>Time Zone:<span class="info-display"></span></p>
+                </div>
+                <div>
+                    <p>Date And Time:<span class="info-display"></span></p>
+                </div>
+                <div>
+                    <p>Pincode:<span class="info-display"></span></p>
+                </div>
+                <div>
+                    <p>Message: <span id="msgId" class="info-display">Number of pincode(s) found:</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="search-box">
+            <div>
+                <h3 id="nearby">Post Offices Near You</h3>
+            </div>
+            <div id="search-po">
+                <div id="search-icon">
+                    <img src="search-icon.jpg" alt="">
+                </div>
+                <input id="filterBox" type="text" placeholder="Search By Name" />
+            </div>
+           
+            <div id="card">
+                <div class="po-card">
+                    <div>
+                        <p><span>Name</span></p>
+                    </div>
+                    <div>
+                        <p><span>Branch Type</span></p>
+                    </div>
+                    <div>
+                        <p><span>Delivery Status</span></p>
+                    </div>
+                    <div>
+                        <p><span>District</span></p>
+                    </div>
+                    <div>
+                        <p><span>Division</span></p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</body>
+
+</html>
